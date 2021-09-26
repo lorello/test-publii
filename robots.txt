@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://lorello.github.io/test-publii/sitemap.xml

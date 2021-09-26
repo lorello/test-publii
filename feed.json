@@ -1,0 +1,41 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "lorello.devops.it",
+    "description": "",
+    "home_page_url": "https://lorello.github.io/test-publii",
+    "feed_url": "https://lorello.github.io/test-publii/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "LoreLLo"
+    },
+    "items": [
+        {
+            "id": "https://lorello.github.io/test-publii/atom-editor-keybindings.html",
+            "url": "https://lorello.github.io/test-publii/atom-editor-keybindings.html",
+            "title": "ATOM Editor Keybindings",
+            "summary": "Core App management Action CTRL + SHIFT + P Command palette ALT + 1,9 Focus on pane 1,9 CTRL + \\ Toggle Tree Pane CTRL + K U/D/L/R Split pane Up/Down/Left/Right CTRL + K CTRL U/D/L/R Focus pane Up/Down/Left/Right CTRL + K CTRL p/n Focus&hellip;",
+            "content_html": "<h2 id=\"core\">Core</h2>\n<table class=\"docutils\">\n<thead>\n<tr>\n<th>App management</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>CTRL + SHIFT + P</code></td>\n<td>Command palette</td>\n</tr>\n<tr>\n<td><code>ALT + 1,9</code></td>\n<td>Focus on pane 1,9</td>\n</tr>\n<tr>\n<td><code>CTRL + \\</code></td>\n<td>Toggle Tree Pane</td>\n</tr>\n<tr>\n<td><code>CTRL + K U/D/L/R</code></td>\n<td>Split pane Up/Down/Left/Right</td>\n</tr>\n<tr>\n<td><code>CTRL + K CTRL U/D/L/R</code></td>\n<td>Focus pane Up/Down/Left/Right</td>\n</tr>\n<tr>\n<td><code>CTRL + K CTRL p/n</code></td>\n<td>Focus Previous/Next pane</td>\n</tr>\n<tr>\n<td><code>CTRL + ALT +/-</code></td>\n<td>Increase/Decrease size of pane</td>\n</tr>\n<tr>\n<td><code>CTRL + K CTRL + w</code></td>\n<td>Clone pane</td>\n</tr>\n<tr>\n<td><code>CTRL + TAB</code></td>\n<td>Next item in pane</td>\n</tr>\n<tr>\n<td><code>CTRL + SHIFT + TAB</code></td>\n<td>Previous item in pane</td>\n</tr>\n</tbody>\n</table>\n<table class=\"docutils\">\n<thead>\n<tr>\n<th>Editing</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>CTRL + a</code></td>\n<td>Select All</td>\n</tr>\n<tr>\n<td><code>CTRL + z</code></td>\n<td>Undo</td>\n</tr>\n<tr>\n<td><code>CTRL + SHIFT + z</code></td>\n<td>Redo</td>\n</tr>\n<tr>\n<td><code>CTRL + [, ]</code></td>\n<td>Indent, Outdent</td>\n</tr>\n<tr>\n<td><code>CTRL + /</code></td>\n<td>Comment</td>\n</tr>\n<tr>\n<td><code>CTRL + SHIFT + K</code></td>\n<td>Delete Line</td>\n</tr>\n<tr>\n<td><code>CTRL + SHIFT + D</code></td>\n<td>Duplicate Line</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"plugins\">Plugins</h2>\n<table class=\"docutils\">\n<thead>\n<tr>\n<th>Project Manager</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>SHIFT + ALT + P</code></td>\n<td>List projects</td>\n</tr>\n</tbody>\n</table>\n<table class=\"docutils\">\n<thead>\n<tr>\n<th>Markdown</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>CTRL + SHIFT + M</code></td>\n<td>Markdown Preview</td>\n</tr>\n</tbody>\n</table>\n<table class=\"docutils\">\n<thead>\n<tr>\n<th>Git / GitHub</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>ALT + g d</code></td>\n<td>Toggle Git diff</td>\n</tr>\n<tr>\n<td><code>ALT + g g</code></td>\n<td>Open on GitHub</td>\n</tr>\n</tbody>\n</table>",
+            "author": {
+                "name": "LoreLLo"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-09-26T23:10:11+02:00",
+            "date_modified": "2021-09-26T23:10:11+02:00"
+        },
+        {
+            "id": "https://lorello.github.io/test-publii/api-authentication-using-hmac-hashing.html",
+            "url": "https://lorello.github.io/test-publii/api-authentication-using-hmac-hashing.html",
+            "title": "API Authentication using HMAC Hashing",
+            "summary": "An Example in PHP Source http://websec.io/2013/02/14/API-Authentication-Public-Private-Hashes.html HMAC means hash-based message authentication code Having openssl installed ... $secret = base64URL(openssl_random_pseudo_bytes(32)); ... or without having it, just use a RandomLib $userHash = '3441df0babc2a2dda551d7cd39fb235bc4e09cd1e4556bf261bb49188f548348'; $secret = 'e249c439ed7697df2a4b045d97d4b9b7e1854c3ff8dd668c779013653913572e'; $content = json_encode(array( 'test' =&gt; 'content' )); $hash = hash_hmac('sha256', $content, $secret);&hellip;",
+            "content_html": "<p>An Example in PHP</p>\n<p>Source http://websec.io/2013/02/14/API-Authentication-Public-Private-Hashes.html</p>\n<p>HMAC means hash-based message authentication code</p>\n<h2 id=\"generate-a-secret-hash\">Generate a Secret HASH</h2>\n<p>Having openssl installed ...</p>\n<pre><code class=\"hljs mel\"><span class=\"hljs-variable\">$secret</span> = base64URL(openssl_random_pseudo_bytes(<span class=\"hljs-number\">32</span>));\n</code></pre>\n<p>... or without having it, just use a <a href=\"https://github.com/ircmaxell/RandomLib\">RandomLib</a></p>\n<h2 id=\"client-request\">Client request</h2>\n<pre><code class=\"hljs bash\"><span class=\"hljs-variable\">$userHash</span> = <span class=\"hljs-string\">'3441df0babc2a2dda551d7cd39fb235bc4e09cd1e4556bf261bb49188f548348'</span>;\n<span class=\"hljs-variable\">$secret</span> = <span class=\"hljs-string\">'e249c439ed7697df2a4b045d97d4b9b7e1854c3ff8dd668c779013653913572e'</span>;\n<span class=\"hljs-variable\">$content</span>    = json_encode(array(\n    <span class=\"hljs-string\">'test'</span> =&gt; <span class=\"hljs-string\">'content'</span>\n));\n\n<span class=\"hljs-variable\">$hash</span> = <span class=\"hljs-built_in\">hash</span>_hmac(<span class=\"hljs-string\">'sha256'</span>, <span class=\"hljs-variable\">$content</span>, <span class=\"hljs-variable\">$secret</span>);\n\n<span class=\"hljs-variable\">$headers</span> = array(\n    <span class=\"hljs-string\">'X-Public: '</span>.<span class=\"hljs-variable\">$userHash</span>,\n    <span class=\"hljs-string\">'X-Hash: '</span>.<span class=\"hljs-variable\">$hash</span>\n);\n\n<span class=\"hljs-variable\">$ch</span> = curl_init(<span class=\"hljs-string\">'http://test.localhost:8080/api-test/'</span>);\ncurl_<span class=\"hljs-built_in\">setopt</span>(<span class=\"hljs-variable\">$ch</span>,CURLOPT_HTTPHEADER,<span class=\"hljs-variable\">$headers</span>);\ncurl_<span class=\"hljs-built_in\">setopt</span>(<span class=\"hljs-variable\">$ch</span>,CURLOPT_RETURNTRANSFER,<span class=\"hljs-literal\">true</span>);\ncurl_<span class=\"hljs-built_in\">setopt</span>(<span class=\"hljs-variable\">$ch</span>,CURLOPT_POSTFIELDS,<span class=\"hljs-variable\">$content</span>);\n\n<span class=\"hljs-variable\">$result</span> = curl_<span class=\"hljs-built_in\">exec</span>(<span class=\"hljs-variable\">$ch</span>);\ncurl_close(<span class=\"hljs-variable\">$ch</span>);\n\n<span class=\"hljs-built_in\">echo</span> <span class=\"hljs-string\">\"RESULT\\n======\\n\"</span>.print_r(<span class=\"hljs-variable\">$result</span>, <span class=\"hljs-literal\">true</span>).<span class=\"hljs-string\">\"\\n\\n\"</span>;</code></pre>",
+            "author": {
+                "name": "LoreLLo"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-09-26T23:09:43+02:00",
+            "date_modified": "2021-09-26T23:09:43+02:00"
+        }
+    ]
+}
